@@ -5,6 +5,9 @@ addons:
   chrome: stable
 
 before_script:
-  - wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
-  - unzip chromedriver_linux64.zip -d /home/travis/
+  - sudo wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
+  - sudo unzip chromedriver_linux64.zip -d /home/
+  - sudo mv chromedriver /usr/bin/chromedriver
+  - sudo chown root:root /usr/bin/chromedriver
+  - sudo chmod +x /usr/bin/chromedriver
 

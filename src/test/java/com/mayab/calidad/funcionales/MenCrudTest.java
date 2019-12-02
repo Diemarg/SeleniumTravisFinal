@@ -58,8 +58,9 @@ public class MenCrudTest {
         URL = "https://mern-crud.herokuapp.com/";
         
         //travis
-        System.setProperty("webdriver.chrome.driver", "C:/home/travis/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/chromedriver");
         driver = new ChromeDriver(); 
+
         /*
         System.out.println("\n\n ------- before ------- ");
         System.out.println(" ------- "+this.yaInicie+" ------- \n\n");
