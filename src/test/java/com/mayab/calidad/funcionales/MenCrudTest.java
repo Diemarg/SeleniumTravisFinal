@@ -56,7 +56,9 @@ public class MenCrudTest {
     @Before
     public void setUp() {  
         URL = "https://mern-crud.herokuapp.com/";
-        System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
+        
+        //travis
+        System.setProperty("webdriver.chrome.driver", "C:/home/travis/chromedriver");
         driver = new ChromeDriver(); 
         /*
         System.out.println("\n\n ------- before ------- ");
