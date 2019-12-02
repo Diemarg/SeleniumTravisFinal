@@ -6,8 +6,7 @@ addons:
 
 before_script:
   - sudo wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
-  - sudo unzip chromedriver_linux64.zip -d /home/
-  - sudo mv chromedriver /usr/bin/chromedriver
+  - sudo unzip chromedriver_linux64.zip -d /usr/bin/
   - sudo chown root:root /usr/bin/chromedriver
   - sudo chmod +x /usr/bin/chromedriver
 
